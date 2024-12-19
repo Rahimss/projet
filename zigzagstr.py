@@ -83,7 +83,7 @@ def dechiffre_zigzag(chiffre_text, k):
 st.title("Zigzag by DEBIECHE")
 
 # User input
-user_text = st.text_area("Entrer le texte Sans caractères spéciaux(.,/\....):", height=200)
+user_text = st.text_area("Entrer le texte:", height=200)
 uploaded_file = st.file_uploader("Ou telecharger un fichier texte(Sans caractères spéciaux):", type="txt")
 if uploaded_file is not None:
     user_text = uploaded_file.read().decode("utf-8").replace('\n', ' ')
